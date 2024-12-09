@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    color: #333333; 
+}
+
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    margin-top: 0; 
+    font-size: 1.8em;
+    color: #444;
+}
+
+main {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 20px; 
+}
+
+.left-side {
+    flex: 1; 
+    margin-right: 20px; 
+    text-align: left;
+}
+
+.right-side {
+    flex: 1; 
+    text-align: left;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ccc; 
+}
+
+th {
+    background-color: #f1f1f1;
+    color: #222;
+}
+
+th, td {
+    padding: 10px; 
+    text-align: left; 
+    font-size: 1em;
+}
+
+.image-container {
+    display: flex; 
+    justify-content: flex-end;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+a {  /*various link graphics found on W3*/
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; 
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #007BFF;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.technique-image {
+    width: 40%; 
+    height: auto; 
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.technique-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    text-align: center; 
+    padding: 10px;
+    background-color: #333; 
+    color: white; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+}
+
+@media (max-width: 590px) {
+    header, nav, main, footer {
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .image-container {
+        justify-content: center;
+    }
+
+    .technique-image {
+        width: 60%;
+    }
+}
+
+@media (min-width: 591px) and (max-width: 790px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center; 
+        gap: 20px;
+    }
+}
+
+@media (min-width: 791px) {
+    body {
+        background-color: beige;
+    }
+
+    .container {
+        max-width: 790px;
+        margin: 0 auto;
+        background-color: beige;
+        padding: 20px;
+    }
+
+    .image-container {
+        justify-content: flex-end;
+    }
+}

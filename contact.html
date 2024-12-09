@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css/contact.css">
+
+    </head>
+<body>
+    <header>Contact Information</header>
+    <div class =".logo-container">
+        <img src="images/muay-thai-action-boxing-jumping-to-attack-vector-25723730.jpg" alt="Muay Thai Logo" id="logo">
+            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="techniques.html">Techniques</a></li>
+            <li><a href="history.html">History</a></li>
+
+        </ul>
+    </nav>
+    <form id="form_one" method="get" action="getResponder.html">
+        <dl>Salutation</dl>
+        <br/>
+        <dd>
+            <input type="radio" id="MR" name="salutation" value="1">
+            <label for="Mister">Mr</label> 
+            <input type="radio" id="MRS" name="salutation" value="2">
+            <label for="Mrs">Mrs</label>
+            <input type="radio" id="MS" name="salutation" value="3">
+            <label for="Miss">Ms</label>
+            <br/>
+            <br/>
+            <dt>Personal Information</dt>
+            <br/>
+            <dt>First Name*</dt>
+            <input name="firstname" type="text" size="25" maxlength="30" required />
+            <br/>
+            <br/>
+            <br/>
+            <dt>Last Name*</dt>
+            <input name="name" type="text" size="25" maxlength="30" required />
+            <br/>
+            <br/>
+            <dt>Phone Number*</dt>
+            <input name="phoneNumber" type="number" size="25" maxlength="30" required />
+            <br/>
+            <br/>
+            <dt>Email*</dt>
+            <dd>
+            <input name="email" type="email" size="25" maxlength="30" required />
+            <br/>
+            </dd>
+            <label for="subject">Subject:</label>
+            <br/>
+            <input type="text" id="subject" name="subject" required>
+            <br/>
+            <label for="body">Message:</label>
+            <br/>
+            <textarea id="body" name="body" rows="10" required></textarea>
+            <br/>
+            <br/>
+            <p>Current Skill Level</p>
+            <input type="checkbox" id="level1" name="skillLvl1" value="skillLevel1">
+            <label for="techniques">Beginner</label>
+            <input type="checkbox" id="level2" name="skillLvl2" value="skillLevel2">
+            <label for="events">Intermediate</label>
+            <input type="checkbox" id="level2" name="skillLvl3" value="skillLevel3">
+            <label for="events">Advanced</label>
+            <br/>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </form>
+
+            <footer>
+                <p>&copy; 2024 Jaden Adair. All rights reserved.</p>
+            </footer>
+    </body>
+</html>
+
+

@@ -1,0 +1,5 @@
+Hello and welcome to my website portfolio.
+My name is Jaden, and this project serves as an opportunity to showcase my web development skills by creating a website centered around Muay Thai. I chose this topic because Muay Thai has been an important part of my life for the past two years. Through training, I’ve gained a deeper understanding of the art, its techniques, and its cultural significance.
+This website is designed to provide an overview of Muay Thai, including its history, techniques, and the benefits it offers to those who practice it. Whether you’re interested in martial arts or simply want to learn something new, I hope this site offers valuable insights while demonstrating my abilities in web design and development.
+Thank you for taking the time to visit my portfolio. Feel free to explore the content and learn more about Muay Thai.
+

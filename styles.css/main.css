@@ -114,8 +114,8 @@ figure figcaption {
 footer {
     text-align: center;
     padding: 5px;
-    background-color: #333;
-    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
     position: fixed;
     bottom: 0;
     width: 100%;
